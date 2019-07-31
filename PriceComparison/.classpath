@@ -4,5 +4,11 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/autum/Downloads/jsoup-1.12.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/autum/Desktop/poi-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/autum/Desktop/poi-ooxml-schemas-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/autum/Desktop/poi-examples-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/autum/Desktop/poi-excelant-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/autum/Desktop/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/autum/Desktop/poi-scratchpad-4.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
