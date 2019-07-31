@@ -1,14 +1,10 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.regex.Pattern;
 
+import java.io.IOException;
+import java.net.URL;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-public class Product {
+public class Product implements Comparable<Product> {
 	
 	// Should support amazon website first
 	private double price;
@@ -29,8 +25,34 @@ public class Product {
 		this.price = Double.parseDouble(value.substring(1));
 	}
 	
+	
+	// Getter for price of product
 	public double getPrice() {
 		return price;
 	}
 	
+	// Compare to uses prices
+	public int compareTo(Product p) {
+		if(p.price==this.price) {
+			return 0;
+		}
+		if(p.price>this.price) {
+			return -1;
+		}else {
+			return 1;
+		}
+	}
+	
+	// If links are identical then products are considered equal
+	@Override
+	public boolean equals(Object x) {
+		if(x==this) {
+			return true;
+		}
+		if(!(x instanceof Product)) {
+			return false;
+		}
+		Product p = (Product) x;
+		return p.link.equals(this.link);
+	}
 }
